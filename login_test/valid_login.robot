@@ -8,7 +8,6 @@ Test Teardown     Close Application
 Valid Login
   Open Moka App in Device
   User Choose To Sign In
-
-Valid Register
-  Open Moka App in Device
-  User Choose To Sign Up
+  User Input Valid Credential
+  User Choose Outlet
+  User will be on main page
