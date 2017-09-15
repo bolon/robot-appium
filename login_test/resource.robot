@@ -31,8 +31,13 @@ User Choose To Sign In
 
 User Input Valid Credential
   Input Text                  //*[@text='Email']    ${VALID.MAIL}
-  Input Text                  password              ${VALID.PWD}
+  Input Password              password              ${VALID.PWD}
   Click Element               signInButton
+
+User Input Invalid Credential
+  Input Text        //*[@text='Email']    ${INVALID.MAIL}
+  Input Password    password              ${INVALID.PWD}
+  Click Element     signInButton
 
 User Choose To Sign Up
   Wait Until Page Contains    "Create Account"
@@ -40,10 +45,13 @@ User Choose To Sign Up
 
 User Choose Outlet
   Wait Until Page Contains    "Select Outlet"   timeout=20
-  Click Element    //*[contains(@text, 'Outlet')]
-  @{outlets}    Get Webelements    //android.widget.RelativeLayout
-  Click Element    @{outlets}[1]
-  Click Element    //*[@text='Continue']
+  Click Element               //*[contains(@text, 'Outlet')]
+  @{outlets}                  Get Webelements    //android.widget.RelativeLayout
+  Click Element               @{outlets}[1]
+  Click Element               //*[@text='Continue']
 
 User will Be on Main Page
   Wait Until Page Contains Element    id=crud_btn
+
+User will see error pop up
+  Wait Until Page Contains    "Authentication failed"
