@@ -14,6 +14,8 @@ Demo for Automated app testing using Robot Framework & Appium
 
 * ``adb`` accessible from everywhere
 
+* Make sure App that will be tested already in device/emulator
+
 * Connected device *WARNING* If using emulator make sure architecture emulator is arm.
 
 * Put .apk in folder ``apk_res``
