@@ -51,7 +51,7 @@ User Choose Outlet
   Click Element               //*[@text='Continue']
 
 User will Be on Main Page
-  Wait Until Page Contains Element    id=crud_btn
+  Wait Until Page Contains Element    id=crud_btn   timeout=20
 
 User will see error pop up
   Wait Until Page Contains    "Authentication failed"
