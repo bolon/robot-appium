@@ -1,5 +1,5 @@
 # robot-appium
-Demo for Automated app testing using Robot Framework & Appium
+Demo for Automated app testing usinaaaag Robot Framework & Appium
 
 # Pre-req
 * ``Appium`` installed in machine
